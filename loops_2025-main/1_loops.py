@@ -22,6 +22,9 @@ for subject in subjects:
 
 # Given:
 numbers = [5, 10, 15, 20]
-
+total = 0
+for number in numbers:
+    total +=number
+print(total)
 # Challenge:
 # Use a for loop to add all the numbers and print the total.
