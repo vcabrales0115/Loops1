@@ -4,26 +4,34 @@
 # **Directions:** Solve each problem by writing your own Python code. Show outputs where required.
 
 
+# # ### **Problem 1: Print Numbers 1 to 10
+# list1to10= list(range(1,11))
+# for number in list1to10 :
+#     print(number)
+# # Write a program that prints the numbers from **1 to 10**, each on a new line.
+# n = int(input("enter a number:"))
+# total_sum = 0
+# for number in range(1,n +1):
+#     total_sum += number
+# # ### **Problem 2: Sum of Numbers
 
-# # **Python Practice Problems (No Code Included)
-
-# **Directions:** Solve each problem by writing your own Python code. Show outputs where required.
-
-
-# ### **Problem 1: Print Numbers 1 to 10
-list1to10= list(range(1,11))
-for number in list1to10 :
-    print(number)
-# Write a program that prints the numbers from **1 to 10**, each on a new line.
-n = int(input("enter a number:"))
-total_sum = 0
-for number in range(1,n +1):
-    total_sum += number
-# ### **Problem 2: Sum of Numbers
+# Ask the user for a number **n**, then calculate and display the **sum of all numbers from 1 to n**.
 
 
 
 # ### **Problem 3: Factorial Calculator
+for i in range(10):
+    print(i)
+    
+def factorial(n):
+
+    factorial= 1
+
+    for i in range(n):
+        factorial*=i+1
+
+    return factorial 
+print (factorial(0))
 
 # Ask the user for a number **n**, then calculate the **factorial** of that number.
 
@@ -38,11 +46,27 @@ for number in range(1,n +1):
 # ### **Problem 5: Print Even Numbers**
 
 # Ask the user for a number **n**, then print all **even numbers** from 2 up to n.
+n =int(input("enter a number:"))
+print("even numbers from 2 to", n, ":")
+for number in range (2, n + 1,2):
+    print(number)
 
+list_even_numbers = list (range(1,45))
+for number in list_even_numbers:
+    if number % 2 ==0:
+        print(number)
+    else:
+        print("odd number, skipping", number)
 
 
 # ### **Problem 6: Reverse a String**
-
+name = input ("enter a string:")
+reversed_name = ""
+for char in name :
+    #looping through each character in the string and adding it to the front o fthe reversed string
+    reversed_name_char = reversed_name
+print("reversed string", reversed_name)
+print(reversed_name[::-1])
 # Ask the user for a string, then print the string **backwards**.
 
 
@@ -62,9 +86,24 @@ for number in range(1,n +1):
 
 
 # ### **Problem 9: Fibonacci Sequence**
+# 1 1 2 3 5 8 13 21 
+def fibonacci(n):
+    if n==1 or n==2:
+        return 1
+    return fibonacci(n-1)+ fibonacci(n-2)
+for i in range(1, 10):
+    print(fibonacci(i))
 
 # Ask the user for a number **n**, then print the first **n numbers** of the Fibonacci sequence.
-
+#fuc calls itself
+def car_price (n):
+    if n <= 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return car_price(n-1)+ car_price(n-2)
+print(car_price)
 
 
 # ### **Problem 10: Pattern Printing**
@@ -80,3 +119,4 @@ for number in range(1,n +1):
 
 
 # If you want, I can also turn this into a **Google Doc**, **worksheet**, **PDF**, or **Canvas/Schoology assignment format**.
+
